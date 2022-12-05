@@ -1,0 +1,24 @@
+
+'use strict';
+
+module.exports = {
+    up:  (queryInterface, Sequelize) =>{
+      return Promise.all([
+            queryInterface.addColum("medico","matricula", {
+                type: DataTypes.INTEGER,
+                allowNull: ftrue
+              }),
+        ]);
+    },
+
+
+
+  async down (queryInterface, Sequelize) {
+    /**
+     * Add commands to revert seed here.
+     *
+     * Example:
+     * await queryInterface.bulkDelete('People', null, {});
+     */
+  }
+};
