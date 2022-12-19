@@ -19,7 +19,18 @@ module.exports = {
     'ArchivoInexistente': {
         code: 1003,
         message: 'El archivo no existe'
+    },
+    'CredencialesInvalidas': {
+        code: 1004,
+        message: 'Credenciales inválidas'
+    },
+    'PacienteNoAutorizado': {
+        code: 1005,
+        message: 'Paciente no autorizado'
+    },
+    'SesionExpirada': {
+        code: 1006,
+        message: 'Sesión expirada'
     }
-
 
 }

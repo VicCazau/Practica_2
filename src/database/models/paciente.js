@@ -27,9 +27,10 @@ module.exports = (sequelize, DataTypes) => {
     edad: {
       type: DataTypes.INTEGER,
     },
-    historiaClinica: {
-        type: DataTypes.STRING,
-      },
+    password: {
+      type: DataTypes.STRING,
+    },
+    
     createdAt: { // fecha de creacion
       type: DataTypes.DATE, // tipo de dato
       field: 'created_at', // nombre de la columna

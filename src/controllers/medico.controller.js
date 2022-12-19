@@ -25,7 +25,7 @@ module.exports = {
         }
     },
 
-    crear: async (req, res) => {
+    crear: async (req, res, next) => {
         try {
             const doctor = await models.medico.create(req.body)
 

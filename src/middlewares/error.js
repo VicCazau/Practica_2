@@ -1,4 +1,4 @@
-
+const errors = require('../const/errors')
 
 
 module.exports = function(err, req, res, next){

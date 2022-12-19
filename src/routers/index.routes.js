@@ -4,6 +4,8 @@ const { Router } = require("express") // importar express
 
 const medicoRoutes = require("./medico.routes") // importar el archivo de rutas de medico
 const pacienteRoutes = require("./paciente.routes") // importar el archivo de rutas de paciente
+const autenticacionRoutes = require("./autenticacion.routes") // importar el archivo de rutas de paciente
+
 //const tratamientoRoutes = require("./tratamiento.routes") // importar el archivo de rutas de tratamiento
 
 const rutas_init = () => { // aca se ponen todas las rutas que existen
@@ -16,4 +18,13 @@ const rutas_init = () => { // aca se ponen todas las rutas que existen
   return router // retornar el router
 };
 
-module.exports = { rutas_init } // exportar el archivo de rutas de la api
+
+const rutas_aute = () => {
+  const router = Router ()
+
+  router.use("/aute", autenticacionRoutes)
+
+return router
+}
+
+module.exports = { rutas_init, rutas_aute } // exportar el archivo de rutas de la api
